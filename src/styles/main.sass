@@ -1,0 +1,629 @@
+@use 'variables'
+    
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: variables.$font-stack
+
+
+header
+  width: 1280px
+  height: 144px
+  background-color: variables.$white
+  margin-left: auto
+  margin-right: auto
+  padding-bottom: 170px
+  box-shadow: 0px -8px 16px variables.$shadowColor2
+
+.center
+  display: flex
+  align-items: center
+
+.center span
+  margin: 4px
+
+.top-1
+  width: auto
+  height: 29px
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  font-size: 11px
+  font-weight: 400
+  color: variables.$gray
+  margin-left: 104px
+  margin-right: 104px
+
+.top-1 span
+  font-weight: bold
+  color: variables.$pink
+
+hr
+  display: block
+  unicode-bidi: isolate
+  margin-block-start: 0.5em
+  margin-block-end: 0.5em
+  margin-inline-start: auto
+  margin-inline-end: auto
+  overflow: hidden
+
+.main
+  max-height: 96px
+  padding: 5px
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  font-size: 11px
+  font-weight: 400
+  color: variables.$gray
+
+.logo
+  height: 63px
+  cursor: pointer
+
+.busca
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+.busca input
+  width: 609px
+  height: 65px
+  padding-left: 33px
+  border: none
+  border-radius: 20px
+  color: variables.$gray
+  background-color: variables.$lightGray
+
+.busca svg
+  margin-right: 20px
+  position: absolute
+  z-index: 1
+
+input:focus
+  outline: none
+
+.perfil a
+  padding-right: 30px
+
+a
+  display: flex
+  align-items: center
+  text-decoration: none
+  font-weight: bold
+  color: variables.$gray
+
+a:hover
+  color: variables.$pink
+ 
+ul
+  display: flex
+  justify-content: space-around
+  list-style: none
+
+.cPink
+  color: variables.$pink
+
+.container
+  width: 100%
+  height: 395px
+  background-image: url("../img/banner.png")
+  background-size: cover
+  background-position: center
+  position: relative
+
+.container::before
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  box-shadow: inset 0px -300px 200px variables.$shadowColor
+  z-index: 1
+
+.content
+  position: relative
+  z-index: 2
+  text-align: left
+  padding: 80px 1020px 20px 290px
+  color: variables.$white
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+
+h1, h2
+  margin: 0
+  padding: 5px
+
+h1
+  font-size: 48px
+
+h2
+  font-size: 32px
+
+button
+  padding: 18px 40px
+  margin-left: 5px
+  margin-top: 30px
+  background-color: variables.$pink
+  color: variables.$white
+  font-weight: bold
+  border: none
+  border-radius: 4px
+  cursor: pointer
+
+button:hover
+  background-color: variables.$hoverPink
+
+.menu-1
+  width: 1280px
+  height: 144px
+  background-color: variables.$white
+  margin-left: auto
+  margin-right: auto
+
+.menu
+  display: flex
+  justify-content: space-between
+
+.menu > div
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+
+.menuButtom
+  margin-top: 30px
+  padding: 30px
+  justify-content: center
+  border-radius: 10px
+  background-color: variables.$lightGray
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
+
+.menuButtom:hover
+  background-color: variables.$white
+
+.menuButtomClick:hover
+  cursor: pointer
+  color: variables.$pink
+  background-color: variables.$white
+
+.menu > div img
+  width: 61px
+
+.menu > div p
+  margin-top: 15px
+  font-weight: bold
+
+
+.menu > div p:hover 
+  color: variables.$menuPink
+  cursor: pointer
+
+
+.active 
+  background-color: variables.$white
+
+
+.menuTitulo 
+  width: 100%
+  max-width: 1264px
+  height: 660px
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin: 100px auto
+  overflow: hidden
+
+
+.menuTitulo-2 
+  width: 100%
+  max-width: 1264px
+  height: 45px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  margin: 0px
+
+
+.menuTitulo-2 > hr 
+  width: 100%
+  max-width: 360px
+  height: 1px
+  border: none
+
+
+.menuTitulo-2 > h2 
+  font-weight: 700
+  font-size: 30px
+  line-height: 45px
+  color: variables.$menuPink
+  padding: 0px 34px 4px
+  text-align: center
+
+
+.menuTitulo-3 
+  width: 100%
+  height: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 10px
+
+
+.menuTitulo-3 > ul > li 
+  width: 210px
+  margin-top: 20px
+  padding: 10px 0px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 16px
+  border: 1.5px solid variables.$gray
+
+
+li:hover 
+  cursor: pointer
+
+
+.produtos 
+  display: flex
+  justify-content: center
+  align-items: center
+  padding-top: 80px
+  max-width: 1280px
+  max-height: 544px
+
+
+.vitrine 
+  display: flex
+  overflow-x: auto 
+  padding: 20px
+  gap: 80px
+  white-space: nowrap 
+
+
+.produto 
+  flex-shrink: 0 
+  width: 255px
+  height: 445px
+  padding: 10px
+  background-color: variables.$white
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+
+
+.produto img 
+  width: 244px
+  height: auto
+
+
+.produto h3 
+  margin-top: 10px
+  font-size: 16px
+
+
+.produto p 
+  margin-top: 5px
+  padding-top: 2px
+  font-size: 14px
+  color: variables.$gray
+
+
+.produto span h5
+  padding-top: 8px
+  color: variables.$menuPink
+
+
+.produto button 
+  margin-top: 10px
+  margin-left: 0
+  padding: 15px 86px
+  color: variables.$white
+  border: none
+  border-radius: 4px
+  font-size: 14px
+  cursor: pointer
+
+
+.mostruario 
+  display: flex
+  width: 100%
+  height: 250px
+  margin-left: auto
+  margin-right: auto
+  padding: 0px 230px
+  justify-content: space-between
+  align-items: center
+
+
+.capa 
+  flex: 1
+  height: 284px
+  width: 100%
+  max-width: 589.73px
+  margin: 60px
+  background-image: url("../img/mostruario.png")
+  background-size: cover
+  background-position: center
+  position: relative
+  color: variables.$white
+  box-shadow: inset 0px -300px 200px variables.$shadowColor
+  border-radius: 10px
+
+
+.capa div 
+  margin-left: 40px
+  margin-top: 50px
+
+
+.capa div h2 
+  font-size: 40px
+
+
+.capa div h3 
+  font-weight: 400
+  font-size: 18px
+  line-height: 24px
+  width: 100%
+  max-width: 185.96px
+
+
+.capa div button, .capa div h2 
+  margin-left: 0
+  padding-left: 0
+
+
+.capa div > button 
+  width: 120px
+  height: 48px
+  padding: 10px
+  font-size: 16px
+  border-radius: 10px
+
+
+.marcas 
+  width: 100%
+  max-width: 1550px
+  margin: 0px auto
+  padding: 105px 0px
+  padding-bottom: 0
+  display: flex
+  flex-direction: column
+  align-items: center
+  position: relative
+
+
+.marcas-1 
+  width: 100%
+  height: 530px
+  display: flex
+  flex-direction: row
+  padding: 10px
+
+
+.marcas-carrossel, .marcas-logo 
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.marcas-svg 
+  width: 211px
+  height: 211px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-left: 80px
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.4)
+
+
+footer 
+  width: 100%
+  height: 395px
+  margin-top: 200px
+  background-color: variables.$footerBackground
+
+
+.info 
+  width: 100%
+  max-width: 1440px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  padding: 20px
+  margin: 0px auto
+  color: variables.$gray
+
+
+.info-1 
+  display: flex
+  flex-flow: row wrap
+
+
+.sobre 
+  padding-right: 93px
+
+
+.sobre h3 
+  font-size: 16px
+  line-height: 20px
+  color: variables.$white
+
+
+.sobre nav 
+  display: flex
+  flex-direction: column
+  padding-top: 24px
+  list-style: none
+  position: relative
+  width: min-content
+  font-weight: 300
+  font-size: 11px
+  line-height: 32px
+  cursor: pointer
+  white-space: nowrap
+
+
+.social 
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  margin-top: 65px
+
+
+.informacoes 
+  padding-right: 93px
+
+
+.informacoes h3 
+  font-size: 16px
+  line-height: 20px
+  color: variables.$white
+
+
+.informacoes nav 
+  display: flex
+  flex-direction: column
+  padding-top: 24px
+  list-style: none
+  position: relative
+  width: min-content
+  font-weight: 300
+  font-size: 11px
+  line-height: 32px
+  cursor: pointer
+  white-space: nowrap
+
+
+.pagamento 
+  padding-right: 93px
+
+
+.pagamento h3 
+  font-size: 16px
+  line-height: 20px
+  color: variables.$white
+
+
+.pagamento-1
+  width: 100%
+  max-width: 195px
+  flex-flow: row wrap
+  display: flex
+  justify-content: space-between
+  padding-top: 24px
+
+
+.pagamento-1 img 
+  width: 40px
+  margin: 10px 10px 10px 0px
+
+
+form 
+  width: 100%
+  max-width: 380px
+  height: 260px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  padding: 40px 29px
+  border-radius: 10px
+  background-color: variables.$white
+
+
+form p 
+  font-size: 18px
+  line-height: 26px
+  text-align: left
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+
+
+form p b 
+  color: variables.$black
+
+
+form .menor 
+  text-align: center
+  font-size: 13px
+
+
+form div 
+  width: 100%
+  max-width: 301px
+  height: 45px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  margin-top: 31px
+
+
+form div input 
+  width: 100%
+  border: 1px solid variables.$black
+  padding: 13px 15px
+  font-weight: 400
+  font-size: 12px
+  line-height: 20px
+  border-radius: 4px
+  margin-right: 9px
+
+
+form div button 
+  margin: 0
+
+
+.footer-2 
+  width: 100%
+  max-width: 1440px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  padding: 20px
+  margin: 0px auto
+
+
+.footer-2 p 
+  font-weight: 400
+  font-size: 10px
+  line-height: 13px
+  text-transform: uppercase
+  color: variables.$white
+  width: 100%
+  max-width: 698px
+
+
+.footer-2 div 
+  width: 100%
+  max-width: 226.08px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.modal 
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background-color: variables.$shadowColor
+
+.modal button
+  position: absolute
+  margin-top: 360px

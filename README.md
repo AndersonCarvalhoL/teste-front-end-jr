@@ -5,7 +5,6 @@
 Projeto em React + Typescript fazendo um e-commerce do site da VTEX
 
 
-- [Clique aqui para acessar!]()
 
 >## Tecnologias
 

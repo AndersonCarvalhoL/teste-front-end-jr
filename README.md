@@ -1,4 +1,4 @@
-># Teste Frontend Júnior
+># Projeto LOJA VTEX
 
 ![Preview](/.github/Preview.png)
 
